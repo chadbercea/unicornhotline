@@ -1,11 +1,24 @@
+<script type='text/javascript'>
+  var getRide = function() {
+      var imgUrl = unicornTo($('#address').val());
+      var twitterAcco = $('#twitter_account').val();
+      var homer = $('<img src="https://api.twitter.com/1/users/profile_image?screen_name='+twitterAcco+'&size=normal">');
+      $('#main').hide();
+      $('body').append('<img src="' + imgUrl + '" />');
+      $('body').append(homer);
+      return false;
+  };
+</script>
 <div id="twitter-wrapper">
-    <a href='#close' onclick='javascript:$("#twitter-wrapper").remove();'>[close]</a>
+    <a href='#close' onclick='javascript:$("#twitter-wrapper").remove();return false;'>[close]</a>
 	<div id="twitter-container">
 	    <div id="twitter-overlay">
 	    	<label>What's your twitter handle?</label>
-            <form>
+            <form onsubmit='getRide();'>
                 <label for="twitter_account"> Your Twitter handle </label>
-                <input type='text' id=twitter_account name='twitter_account' placeholder="@YourTwitterHandle">
+                <input type='text' id=twitter_account name='twitter_account' placeholder="@YourTwitterHandle" />
+                <input type='text' id=address name='address' placeholder="1654 Mason Street, San Francisco, CA" />
+                <a id=get_the_ride onclick='getRide();'>Get the Unicorn</a>
             </form>
 	    </div>
 	</div>
