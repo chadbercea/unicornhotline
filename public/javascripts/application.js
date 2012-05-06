@@ -9,6 +9,13 @@ $(function() {
     $('#unicornride').click(function() {
         var unicornride = this;
         $.get('_needs_unicorn.html', function(data) {
+            var overlay = $('<div />');
+            overlay.css('left', '0');
+            overlay.css('top', '0');
+            overlay.css('top', '0');
+            overlay.css('right', '0');
+            overlay.css('bottom', '0');
+            overlay.css('position', 'absolute');
             var popup = $('<div />');
             popup.css('left', '50%');
             popup.css('margin-left', '-300px');
@@ -17,8 +24,9 @@ $(function() {
             popup.css('top', '200px');
             popup.css('position', 'absolute');
             popup.append(data);
+            $('body').append(overlay);
             $('body').append(popup);
-            $('body').click(function() {
+            overlay.click(function() {
                 popup.remove();
                 return false;
             });
