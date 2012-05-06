@@ -13,7 +13,18 @@ var unicornAt = function(endingPoint) {
     return url;
 };
 $(function() {
-    var getRide = function() {
+    var getRide = function(e) {
+        var valid = true;
+        e.preventDefault();
+        if (!($('#twitter_account').val().length > 0)) {
+            $('#twitter_account').css('border', '5px solid red');
+            valid = false;
+        }
+        if (!($('#address').val().length > 0)) {
+            $('#address').css('border', '5px solid red');
+            valid = false;
+        }
+        if (!valid) {return;}
         var canvas = document.createElement('canvas');
         canvas.id = 'canvas';
         canvas.width = $(window).width();
@@ -121,7 +132,6 @@ $(function() {
                 };
             };
         };
-        return false;
     };
     $('#unicornride').click(function(e) {
         e.preventDefault();
@@ -136,7 +146,13 @@ $(function() {
             popup.css('position', 'absolute');
             popup.append(data);
             $('#main').append(popup);
-            $('#get_the_ride').click(getRide);
+            $('#get_the_ride').submit(getRide);
+            $('#get_the_ride').find('input').keypress(function(e) {
+                if (e.keyCode === 13) {
+                    $('#get_the_ride').submit();
+                };
+            });
+            $('#confirm').click(getRide);
         });
     });
 
