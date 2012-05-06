@@ -38,7 +38,7 @@ img {
 h1 {
 	font-family: "museo-slab", serif;
 	font-size: 5em;
-	color: #636363;
+	color: #444;
 	text-shadow: 0 1px 0 #ffffff;
 	line-height: 65px;
 	height:;
@@ -54,6 +54,7 @@ h3 {
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
 	margin-top: -40px;
+	margin-left: 20px;
 }
 
 div#explanation-container {
@@ -71,8 +72,9 @@ div#explanation {
 
 div#explanation p {
 	font-family: "museo-sans", sans-serif;
-	color: #636363;
+	color: #292929;
 	text-shadow: 0 1px 0 #ffffff;
+	font-size: 1.2em;
 }
 
 div#explanation ol {
