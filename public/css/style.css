@@ -27,7 +27,7 @@ div#title-container {
 div#unicorn-title-wrapper {
 	width: 960px;
 	margin: 0 auto;
-
+	clear: right;
 }
 
 img#logo {
