@@ -29,6 +29,11 @@ div#unicorn-title-wrapper {
 
 }
 
+img#logo {
+	float: left;
+	margin: 0 0 0 100px;
+}
+
 div#title {
 	width: 560px;
 	height: 120px;
@@ -36,11 +41,8 @@ div#title {
 	float: left;
 }
 
-img {
+img#nph {
 	float: left;
-	margin: 0 0 0 80px;
-	width: 300px;
-	height: 225px;
 }
 
 h1 {
@@ -174,6 +176,7 @@ div#get-button-wrapper {
 
 div#get-button-container {
 	width: 200px;
+	height: 50px;
 	margin: 0 auto;
 	background: #ff5db1; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ff5db1 0%, #ef017c 100%); /* FF3.6+ */
@@ -194,7 +197,16 @@ div#get-button-container {
 	-webkit-box-shadow: 1px 0px 0px #000, 0px -1px 0px #000, -1px 0px 0px #000, inset 0px 1px 0px #fff;
 }
 
-div#get-button p {
+/*div#get-button {
+	width: 200px;
+	height: 48px;
+}*/
+
+a#get_the_ride {
+	width: 10px;
+}
+
+div#get-button a {
 	width: 125px;
 	height: 50px;
 	margin: 0 auto;
@@ -248,7 +260,7 @@ div#twitter-container {
 
 div#twitter-overlay label {
 	color: #f1f1f1;
-	margin: 80px;
+	margin: 0 0 0 180px;
 	font-family: "museo-slab", sans-serif;
 	font-size: 1em;
 	text-shadow: 0 1px 2px #292929;
