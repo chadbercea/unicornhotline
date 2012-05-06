@@ -65,7 +65,7 @@ div#twitter-wrapper {
 
 div#twitter-container {
 	background: #292929;
-	opacity: .75;
+	/*opacity: .75;*/
 	width: 600px;
 	height: 200px;
 	margin: 0 auto;
