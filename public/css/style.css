@@ -162,25 +162,6 @@ a:active {
 	color: #ffffff;
 }
 
-/*
-Get Unicorn Button
-*/
-
-
-a#get_the_ride {
-	width: 10px;
-}
-
-div#get-button a {
-	width: 125px;
-	height: 50px;
-	margin: 0 auto;
-	line-height: 50px;
-	color: white;
-	text-shadow: 0 1px 2px #292929;
-	font-family: "muse-sans", sans-serif;
-}
-
 a:link {
 	color: #ffffff;
 	text-decoration: none;
