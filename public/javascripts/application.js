@@ -6,6 +6,17 @@ var unicornTo = function(endingPoint) {
     return url;
 };
 $(function() {
+    var getRide = function() {
+        var imgUrl = unicornTo($('#address').val());
+        var twitterAcco = $('#twitter_account').val();
+        var homer = $('<img id="unicorn-customer" src="https://api.twitter.com/1/users/profile_image?screen_name='+twitterAcco+'&size=normal">');
+        var ballmerPeak = $('<img id="unicorn-source" src="https://api.twitter.com/1/users/profile_image?screen_name=BallmerPeak&size=normal">');
+        $('#main').hide();
+        $('body').append('<img id="unicorn-map" src="' + imgUrl + '" />');
+        $('body').append(ballmerPeak);
+        $('body').append(homer);
+        return false;
+    };
     $('#unicornride').click(function() {
         var unicornride = this;
         $.get('_needs_unicorn.html', function(data) {
@@ -17,7 +28,8 @@ $(function() {
             popup.css('top', '200px');
             popup.css('position', 'absolute');
             popup.append(data);
-            $('body').append(popup);
+            $('#main').append(popup);
+            $('#get_the_ride').bind('submit', getRide);
             return false;
         });
     });

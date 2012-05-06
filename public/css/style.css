@@ -313,7 +313,23 @@ div#meanwhile span {
 
 
 
-
+#unicorn-customer, #unicorn-source {
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -16px;
+}
+#unicorn-source {
+    margin-top: 16px;
+}
+#unicorn-map {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -240px;
+    top: 50%;
+}
 
 
 
