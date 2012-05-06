@@ -17,7 +17,8 @@ $(function() {
         $('body').append(homer);
         return false;
     };
-    $('#unicornride').click(function() {
+    $('#unicornride').click(function(e) {
+        e.preventDefault();
         var unicornride = this;
         $.get('_needs_unicorn.html', function(data) {
             var popup = $('<div />');
@@ -29,8 +30,7 @@ $(function() {
             popup.css('position', 'absolute');
             popup.append(data);
             $('#main').append(popup);
-            $('#get_the_ride').bind('submit', getRide);
-            return false;
+            $('#get_the_ride').click(getRide);
         });
     });
 

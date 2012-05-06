@@ -9,14 +9,15 @@ body {
 	background-repeat: repeat;
 	background-repeat: repeat;
 	width: 100%;
+	overflow: hidden;
 }
 
 div#main {
 	background: #c0c0c0 url(../img/noise.png);
 	width: 960px;
-	height: 700px;
 	margin: 0 auto;
 	box-shadow: 0 5px 6px #292929;
+	padding-bottom: 15px;
 }
 
 div#title-container {
@@ -70,7 +71,6 @@ h3 {
 
 div#explanation-container {
 	width: 100%;
-	height: 370px;
 	overflow: hidden;
 	margin: 10px 0 0 0;
 }
@@ -85,8 +85,8 @@ div#explanation p {
 	font-family: "museo-sans", sans-serif;
 	color: #292929;
 	text-shadow: 0 1px 0 #ffffff;
-	font-size: 1.2em;
-	margin-top: 40px;
+	font-size: 0.9em;
+	margin-top: 20px;
 }
 
 div#explanation ol {
@@ -99,7 +99,7 @@ div#explanation li {
 	font-family: "museo-sans", sans-serif;
 	color: #ffffff;
 	text-shadow: 0 1px 2px #292929;
-	font-size: 2em;
+	font-size: 1.7em;
 	font-weight: bolder;
 }
 
@@ -109,7 +109,8 @@ Get Started Button
 
 div.button-wrapper {
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-bottom: 5px;
 }
 
 div.button-container {
@@ -193,7 +194,7 @@ div#twitter-container {
 	background: #292929;
 	/*opacity: .75;*/
 	width: 600px;
-	height: 200px;
+	height: 260px;
 	margin: 0 auto;
 	-webkit-border-radius: 3px;
 	-webkit-border-top-left-radius: 5px;
@@ -204,19 +205,23 @@ div#twitter-container {
 	box-shadow: 0 5px 5px #292929;
 }
 
-div#twitter-overlay label {
+.form-row {
+	margin-left: auto;
+	margin-right: auto;
+}
+label {
+	width: 60px;
 	color: #f1f1f1;
-	margin: 0 0 0 180px;
+	margin: 0 0 0 102px;
 	font-family: "museo-slab", sans-serif;
 	font-size: 1em;
 	text-shadow: 0 1px 2px #292929;
 }
 
-div#twitter-overlay input {
-	width: 120px;
+.form-row input {
+	width: 170px;
 	margin: 60px 0 0 20px;
 	border-radius: 3px;
-	float: left;
 }
 
 
@@ -276,12 +281,5 @@ div#meanwhile span {
     margin-top: -240px;
     top: 50%;
 }
-
-
-
-
-
-
-
 
 
