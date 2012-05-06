@@ -15,10 +15,24 @@ div#title-container {
 	/*width: 960px;*/
 }
 
+div#unicorn-title-wrapper {
+	width: 960px;
+	margin: 0 auto;
+
+}
+
 div#title {
 	width: 560px;
 	height: 120px;
 	margin: 0 auto;
+	float: left;
+}
+
+img {
+	float: left;
+	/*margin: 0 0 0 100px;*/
+	width: 300px;
+	height: 225px;
 }
 
 h1 {
@@ -46,13 +60,33 @@ div#explanation-container {
 	width: 100%;
 	height: 300px;
 	overflow: hidden;
-	margin: 60px 0 0 0;
+	margin: 10px 0 0 0;
 }
 
 div#explanation {
 	width: 600px;
 	margin: 0 auto;
 	padding: 0 0 0 0;
+}
+
+div#explanation p {
+	font-family: "museo-sans", sans-serif;
+	color: #636363;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+div#explanation ol {
+	text-shadow: 0 1px 2px #292929;
+
+}
+
+
+div#explanation li {
+	font-family: "museo-sans", sans-serif;
+	color: #ffffff;
+	text-shadow: 0 1px 2px #292929;
+	font-size: 2em;
+	font-weight: bolder;
 }
 
 /*
