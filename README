@@ -1,2 +1,7 @@
+As ambitious as it for some people sounds like, this application is about offering people the chance to order a unicorn to take them home.
+
+
+The installation instructions for the server side are:
+
 npm install express
 npm install socket.io
