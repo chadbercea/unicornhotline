@@ -7,8 +7,24 @@ var unicornTo = function(endingPoint) {
 };
 $(function() {
     $('#unicornride').click(function() {
-        alert('unicornride');
+        var unicornride = this;
+        $.get('_needs_unicorn.html', function(data) {
+            var popup = $('<div>');
+            popup.css('margin-left', 'auto');
+            popup.css('margin-right', 'auto');
+            popup.css('width', '600px');
+            popup.css('heigth', '400px');
+            popup.css('top', '200px');
+            popup.html(data);
+            $('body').append(popup);
+            $('body').click(function() {
+                popup.remove();
+                return false;
+            });
+            return false;
+        });
     });
+
     /* jQuery stuff */
     $('[data-twitter-account]').each(function() {
         var img = $('<img src='+'https://api.twitter.com/1/users/profile_image?screen_name='+$(this).attr('data-twitter-account')+'&size=normal'+'>');
