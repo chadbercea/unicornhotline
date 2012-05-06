@@ -9,13 +9,14 @@ $(function() {
     $('#unicornride').click(function() {
         var unicornride = this;
         $.get('_needs_unicorn.html', function(data) {
-            var popup = $('<div>');
-            popup.css('margin-left', 'auto');
-            popup.css('margin-right', 'auto');
+            var popup = $('<div />');
+            popup.css('left', '50%');
+            popup.css('margin-left', '-300px');
             popup.css('width', '600px');
             popup.css('heigth', '400px');
             popup.css('top', '200px');
-            popup.html(data);
+            popup.css('position', 'absolute');
+            popup.append(data);
             $('body').append(popup);
             $('body').click(function() {
                 popup.remove();
