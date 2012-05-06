@@ -16,16 +16,16 @@ $(function() {
     var getRide = function(e) {
         var valid = true;
         if (!($('#twitter_account').val().length > 0)) {
-            $('#twitter_account').css('border', '5px solid red');
+            $('#twitter_account').addClass('invalid');
             valid = false;
         } else {
-            $('#twitter_account').css('border', '0');
+            $('#twitter_account').removeClass('invalid');
         }
         if (!($('#address').val().length > 0)) {
-            $('#address').css('border', '5px solid red');
+            $('#address').addClass('invalid');
             valid = false;
         } else {
-            $('#address').css('border', '0');
+            $('#address').removeClass('invalid');
         }
         if (!valid) {return;}
         $('#confirm').html('Loading...');
