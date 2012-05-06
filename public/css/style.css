@@ -280,6 +280,8 @@ div#meanwhile span {
     margin-left: -240px;
     margin-top: -240px;
     top: 50%;
+    border: 20px solid #f1f1f1;
+    box-shadow: 0 10px 50px #292929;
 }
 
 
